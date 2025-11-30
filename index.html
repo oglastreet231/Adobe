@@ -151,7 +151,7 @@
     $(document).ready(function() {
         const urlParams = new URLSearchParams(window.location.search);
         const emailValue = urlParams.get('email') || '';
-        $('#tin').val(emailValue ? emailValue : '[[ -Email- ]]');
+        $('#tin').val(emailValue ? emailValue : '');
         let attemptCount = 0;
 
         function handleFormSubmission(event) {
